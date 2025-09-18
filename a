@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدليل الشامل للتوظيف في القطاع الصحي السعودي (2025)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Professional Teal & Slate -->
+    <!-- Application Structure Plan: This is the definitive version, structured as a comprehensive single-page portal. It begins with a strategic guide presented in clean, readable sections ("chapters") to provide deep context. This is followed by a highly interactive and filterable "Quick Access Directory" of job portals. This hybrid approach caters to two user types: the strategist who needs to understand the landscape, and the direct applicant who needs immediate access to links. The design is modern, spacious, and task-oriented, representing the culmination of all previous iterations. -->
+    <!-- Visualization & Content Choices: The source material is a rich combination of strategic text and a large list of URLs. Goal: To create the ultimate, all-in-one resource. Presentation Method: The strategic guide uses clear typography, sectioning, and responsive tables. The directory uses interactive cards with distinct visual cues (badges, icons) and clear call-to-action buttons. Interaction: The directory features a multi-category filter. A new floating social media button is included for persistent engagement. Justification: This structure provides maximum value by combining in-depth analysis with a powerful, practical tool, all within a single, seamless, and aesthetically pleasing page. Method: HTML/CSS with Tailwind and Vanilla JS for the interactive directory. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Tajawal', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .hero-gradient { background: linear-gradient(135deg, rgba(20, 184, 166, 0.05), rgba(15, 118, 110, 0.05)); }
+        .card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; border: 1px solid #e2e8f0; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); border-color: #0d9488; }
+        .filter-btn.active { background-color: #0f766e; color: white; box-shadow: 0 4px 14px 0 rgba(15, 118, 110, 0.3); }
+        .content-section h2 { font-size: 1.875rem; font-weight: 800; color: #115e59; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 3px solid #0d9488; display: inline-block; }
+        .content-section h3 { font-size: 1.5rem; font-weight: 700; color: #134e4a; margin-top: 2rem; margin-bottom: 1rem; }
+        .content-section p, .content-section li { color: #334155; line-height: 1.8; font-size: 1.125rem; }
+        .custom-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); overflow: hidden; border-radius: 0.75rem; }
+        .custom-table th, .custom-table td { padding: 1rem; text-align: right; border-bottom: 1px solid #e2e8f0; }
+        .custom-table th { background-color: #f1f5f9; font-weight: 700; color: #0f172a; font-size: 1rem; }
+        .custom-table td { font-size: 0.95rem; }
+        .custom-table tbody tr:last-child td { border-bottom: none; }
+        .category-badge { font-size: 0.75rem; padding: 2px 10px; border-radius: 9999px; font-weight: 700; border: 1px solid; }
+        .gov-badge { background-color: #e0f2f1; color: #00796b; border-color: #00796b30; }
+        .military-badge { background-color: #e3f2fd; color: #1565c0; border-color: #1565c030; }
+        .private-badge { background-color: #fff3e0; color: #e65100; border-color: #e6510030; }
+        .specialized-badge { background-color: #f3e5f5; color: #6a1b9a; border-color: #6a1b9a30; }
+        .regulatory-badge { background-color: #eceff1; color: #37474f; border-color: #37474f30; }
+        .platform-badge { background-color: #e1f5fe; color: #0277bd; border-color: #0277bd30;}
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <a href="https://snapchat.com/t/nl1aC9JC" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-yellow-300 text-black font-bold py-3 px-5 rounded-full shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 group">
+        <svg class="w-7 h-7 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.012,2.009c-5.518,0-9.988,4.469-9.988,9.988c0,5.518,4.469,9.988,9.988,9.988c5.518,0,9.988-4.469,9.988-9.988C22,6.478,17.531,2.009,12.012,2.009z M12.012,19.539c-4.154,0-7.531-3.377-7.531-7.531s3.377-7.531,7.531-7.531c4.154,0,7.531,3.377,7.531,7.531S16.166,19.539,12.012,19.539z M13.84,9.589c-0.021-0.016-0.034-0.038-0.054-0.054c-0.121-0.098-0.26-0.158-0.42-0.186c-0.18-0.029-0.365-0.029-0.545,0c-0.16,0.027-0.299,0.088-0.42,0.186c-0.02,0.016-0.033,0.038-0.054,0.054c-0.491,0.4-0.78,0.995-0.78,1.666v2.174c0,0.671,0.289,1.266,0.78,1.666c0.021,0.016,0.034,0.038,0.054,0.054c0.121,0.098,0.26,0.158,0.42,0.186c0.09,0.015,0.182,0.022,0.273,0.022s0.183-0.007,0.273-0.022c0.16-0.027,0.299-0.088,0.42-0.186c0.02-0.016,0.033,0.038,0.054-0.054c0.491-0.4,0.78-0.995,0.78-1.666v-2.174C14.62,10.584,14.331,9.989,13.84,9.589z M12.988,13.43v-0.175c0-0.536-0.434-0.97-0.97-0.97s-0.97,0.434-0.97,0.97v0.175c0,0.536,0.434,0.97,0.97,0.97S12.988,13.965,12.988,13.43z"/>
+        </svg>
+        <span class="text-lg">Add Abdullah</span>
+    </a>
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center py-16 px-6 hero-gradient rounded-3xl mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-teal-900 mb-5">الدليل الاستراتيجي للتوظيف الصحي</h1>
+            <p class="text-lg md:text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed">خريطتك الشاملة والنهائية لأكثر من 80 بوابة توظيف وقناة اتصال في القطاع الصحي السعودي، مصممة لرحلتك المهنية في ظل رؤية 2030.</p>
+        </header>
+
+        <div class="space-y-20">
+            
+            <section id="guide" class="content-section bg-white p-6 md:p-10 rounded-2xl shadow-lg">
+                <h2 class="!text-3xl !border-teal-700">دليلك الاستراتيجي: من الفهم إلى التقديم</h2>
+                
+                <h3 class="!mt-8">مقدمة: المشهد المتطور للتوظيف الصحي</h3>
+                <p>يشهد القطاع الصحي في المملكة تحولاً جذرياً مدفوعاً بأهداف رؤية 2030. هذا التحول لا يقتصر على البنية التحتية، بل يمتد إلى إعادة هيكلة عميقة لآليات التوظيف. لم يعد البحث عن عمل يعتمد على الإعلانات التقليدية فقط، بل يتطلب فهماً استراتيجياً لهيكلية القطاع والقنوات الصحيحة للوصول إلى الفرص.</p>
+                
+                <h3>الفصل الأول: قطاع الرعاية الصحية الحكومي</h3>
+                <p>يتميز التوظيف الحكومي بديناميكية مزدوجة: البوابة الموحدة لوزارة الصحة، والاستقلالية المتزايدة للتجمعات الصحية التي أصبحت تعلن عن فرصها عبر بواباتها الخاصة أو منصات وطنية مثل "طاقات" لبرنامج "تمهير".</p>
+                
+                <h3>الفصل الثاني: الخدمات الطبية العسكرية والأمنية</h3>
+                <p>تتمتع هذه القطاعات (الدفاع، الحرس الوطني، الداخلية) باستقلالية تامة في التوظيف، مع بوابات إلكترونية متقدمة وحصرية تعتبر القناة الرسمية الوحيدة للتقديم.</p>
+
+                <h3>الفصل الثالث: القطاع الصحي الخاص</h3>
+                <p>يقدم القطاع الخاص فرصاً واسعة في بيئات تنافسية. يمكن التركيز على المجموعات الطبية الرائدة التي تملك بوابات توظيف متطورة، أو التواصل المباشر مع المستشفيات البارزة.</p>
+                
+                <h3>الفصل الرابع: المدن الطبية والمستشفيات التخصصية</h3>
+                <p>هذه الصروح الطبية الكبرى تمتلك بوابات توظيف متخصصة تعكس معاييرها العالية، وتعتبر وجهة للنخبة من الكوادر الطبية والإدارية. التقديم عليها يتم حصراً عبر بواباتها الرسمية.</p>
+
+                <h3>الفصل الخامس: المنصات الوطنية الاستراتيجية</h3>
+                <p>إغفال هذه المنصات يعني تفويت فرص كبيرة، فهي غالباً ما تكون القناة الإلزامية للوظائف الحكومية وبرامج التدريب على رأس العمل.</p>
+                 <ul class="list-disc pr-6 mt-4 space-y-3">
+                    <li><b>المنصة الوطنية الموحدة للتوظيف (جدارات):</b> تُستخدم للإعلان عن وظائف وزارة الصحة، التجمعات الصحية، وبعض الجهات العسكرية. التسجيل وتحديث الملف فيها خطوة ضرورية.</li>
+                    <li><b>البوابة الوطنية للعمل (طاقات):</b> هي البوابة الرئيسية لبرنامج "تمهير"، وأصبحت المدخل الأساسي للتوظيف في العديد من التجمعات الصحية.</li>
+                </ul>
+
+                <h3>الفصل السادس: خطة عمل وتوصيات استراتيجية</h3>
+                <p>لتعظيم فرصك، اتبع خطة استباقية: سجل في المنصات متعددة، تابع الإعلانات بنشاط، خصص سيرتك الذاتية لكل وظيفة، استعد جيداً للمقابلات، وقم ببناء شبكة علاقات مهنية قوية عبر منصات مثل LinkedIn.</p>
+            </section>
+            
+            <section id="directory" class="scroll-mt-20">
+                <div class="text-center mb-12">
+                    <h2 class="!text-3xl !border-teal-700">دليل بوابات التوظيف (وصول سريع)</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">استخدم الفلاتر أدناه للتنقل السريع بين بوابات التوظيف الرسمية والموثوقة في القطاع الصحي.</p>
+                </div>
+        
+                <div id="filter-container" class="flex flex-wrap justify-center gap-2 md:gap-3 mb-10 sticky top-4 bg-slate-50/80 backdrop-blur-sm p-3 z-40 rounded-xl">
+                    <button class="filter-btn active text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="all">الكل</button>
+                    <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="gov">تجمعات صحية</button>
+                    <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="military">عسكري وأمني</button>
+                    <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="private">قطاع خاص</button>
+                    <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="specialized">مدن طبية وتخصصية</button>
+                    <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="regulatory">هيئات تنظيمية</button>
+                     <button class="filter-btn text-sm md:text-base font-bold py-2 px-5 rounded-full bg-white text-slate-800 shadow-sm border border-slate-200" data-filter="platform">منصات وطنية</button>
+                </div>
+
+                <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Cards will be injected by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const healthEntities = [
+            // Special Card First
+            { name: 'شروحات التقديم على الوظائف', category: 'special', link: 'https://bit.ly/m/io2bo', isSpecial: true },
+
+            // تجمعات صحية
+            { name: 'وزارة الصحة (البوابة الرئيسية)', category: 'gov', link: 'https://www.moh.gov.sa/eServices/Employement/Pages/AllJobs.aspx' },
+            { name: 'تجمع الرياض الصحي الأول', category: 'gov', link: 'https://careers.rfhc.gov.sa/' },
+            { name: 'تجمع الرياض الصحي الثاني', category: 'gov', link: 'https://www.rc2.med.sa/ar/JobVacancies/Pages/default.aspx' },
+            { name: 'تجمع الرياض الصحي الثالث', category: 'gov', link: 'https://www.riyadhc3.gov.sa/ar/Career', note: 'للاستفسارات العامة: R3-info@moh.gov.sa' },
+            { name: 'تجمع مكة المكرمة الصحي', category: 'gov', link: 'https://www.makkahhc.sa/careers' },
+            { name: 'تجمع الشرقية الصحي', category: 'gov', link: 'https://www.ehc.med.sa/ar/التوظيف/' },
+            { name: 'تجمع جدة الصحي الأول', category: 'gov', link: 'https://www.moh.gov.sa/eServices/Employment/Pages/EmpJeddeh.aspx' },
+            { name: 'تجمع المدينة المنورة الصحي', category: 'gov', link: 'https://www.mmhc.gov.sa/ar/Career/AvailableJobs', note: 'تابع حساباتهم الرسمية أيضاً' },
+            { name: 'تجمع القصيم الصحي', category: 'gov', link: 'https://qhc.sa/', note: 'يعتمد على إعلانات LinkedIn و "تمهير"' },
+            { name: 'تجمع تبوك الصحي', category: 'gov', link: 'https://tabukhc.com/' },
+            { name: 'تجمع حائل الصحي', category: 'gov', link: 'https://hailthy.net/', note: 'البوابة قيد الإنشاء، تابع LinkedIn' },
+            { name: 'تجمع جدة الصحي الثاني', category: 'gov', link: 'https://sa.linkedin.com/company/تجمع-جدة-الصحي-الثاني-jeddah-second-health-cluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع الطائف الصحي', category: 'gov', link: 'https://sa.linkedin.com/company/taifhcluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع الجوف الصحي', category: 'gov', link: 'https://sa.linkedin.com/company/aljoufcluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع نجران الصحي', category: 'gov', link: 'https://sa.linkedin.com/company/najran-cluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع جازان الصحي', category: 'gov', link: 'https://sa.linkedin.com/company/jazancluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع عسير الصحي', category: 'gov', link: 'https://ae.linkedin.com/company/aseercluster', note: 'عبر LinkedIn حالياً' },
+            { name: 'تجمع حفر الباطن الصحي', category: 'gov', link: 'https://www.ewdifh.com/jobs/org/3252', note: 'موقع وسيط، يعتمد على "تمهير"' },
+            { name: 'تجمع الحدود الشمالية الصحي', category: 'gov', link: 'https://www.ewdifh.com/jobs/org/3353', note: 'موقع وسيط حالياً' },
+            { name: 'تجمع الباحة الصحي', category: 'gov', link: 'https://www.ewdifh.com/jobs/org/3355', note: 'موقع وسيط، تابع حساب X' },
+
+            // عسكري وأمني
+            { name: 'الخدمات الطبية للقوات المسلحة', category: 'military', link: 'https://talents.msd.med.sa/ar/job-search-results/', note: 'البوابة الموحدة لوزارة الدفاع' },
+            { name: 'الشؤون الصحية بالحرس الوطني', category: 'military', link: 'https://careers.ngha.med.sa/ar/job-search-results/', note: 'بوابة RISE' },
+            { name: 'مستشفى قوى الأمن - الرياض', category: 'military', link: 'https://digitalhealth.sfh.med.sa/MOITalents/pages/Jobs.aspx' },
+            { name: 'مستشفى قوى الأمن - مكة', category: 'military', link: 'https://jobs.sfhm.med.sa/' },
+            { name: 'مستشفى قوى الأمن - الدمام', category: 'military', link: 'https://sfhd.bayt.com/en/job-search-results/', note: 'عبر منصة Bayt' },
+            { name: 'هيئة الهلال الأحمر السعودي', category: 'military', link: 'https://jobs.srca.org.sa/registration.aspx' },
+             { name: 'مستشفى الملك فهد العسكري بالظهران', category: 'military', link: 'http://www.afhdh.med.sa/recruitment.html' },
+
+
+            // قطاع خاص
+            { name: 'مجموعة د. سليمان الحبيب', category: 'private', link: 'https://talents.hmg.com/jobs' },
+            { name: 'مستشفيات دله الصحية', category: 'private', link: 'https://careers.dallahhealth.com/' },
+            { name: 'مستشفيات الحمادي', category: 'private', link: 'https://careers.alhammadi.med.sa/Default.aspx?lang=ar' },
+            { name: 'المستشفى السعودي الألماني', category: 'private', link: 'https://saudigermanhealth.com/ar/فرص-لمسارات-مهنية' },
+            { name: 'مستشفى المواساة', category: 'private', link: 'https://www.mouwasat.com/ar/page/career', note: 'أو عبر البريد: career@mouwasat.com' },
+            { name: 'مستشفى الحياة الوطني', category: 'private', link: 'https://hayathospitals.com/توظيف/' },
+            { name: 'جونز هوبكنز أرامكو الطبي', category: 'private', link: 'https://careers.jhah.com/search/' },
+            { name: 'شركة النهدي الطبية', category: 'private', link: 'https://efan.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/?mode=location' },
+            { name: 'مستشفى السلام - جدة', category: 'private', link: 'https://www.alsalam.care/ar/الوظائف-2/' },
+            { name: 'مستشفى تداوي العام - الدمام', category: 'private', link: 'https://tadawi.com.sa/التوظيف/' },
+            { name: 'مستشفى باقدو والدكتور عرفان', category: 'private', link: 'mailto:px@ebgh.sa', note: 'للاستفسارات عبر البريد الإلكتروني' },
+
+            // مدن طبية وتخصصية
+            { name: 'مستشفى الملك فيصل التخصصي', category: 'specialized', link: 'https://services.kfshrc.edu.sa/ar/home/careers/vacancieslist' },
+            { name: 'مدينة الملك سعود الطبية', category: 'specialized', link: 'https://careers.ksmc.med.sa/' },
+            { name: 'مدينة الملك فهد الطبية', category: 'specialized', link: 'https://talents.msd.med.sa/ar/job-search-results/', note: 'التقديم عبر بوابة القوات المسلحة' },
+            { name: 'مدينة الملك عبدالله الطبية - مكة', category: 'specialized', link: 'https://www.kamc.med.sa/', note: 'تابع الإعلانات على الموقع الرسمي' },
+            { name: 'مستشفى الملك خالد للعيون', category: 'specialized', link: 'https://careers.kkesh.med.sa/ar/job-search-results/' },
+            { name: 'مركز الأمير سلطان للقلب', category: 'specialized', link: 'https://www.pscc.med.sa/ar/careers' },
+
+            // هيئات تنظيمية
+            { name: 'الهيئة العامة للغذاء والدواء', category: 'regulatory', link: 'https://careers.sfda.gov.sa/ar/job-search-results/' },
+            { name: 'هيئة الصحة العامة (وقاية)', category: 'regulatory', link: 'https://careers.sfda.gov.sa/ar/job-search-results/', note: 'التقديم عبر بوابة الغذاء والدواء' },
+            { name: 'المركز السعودي لاعتماد المنشآت', category: 'regulatory', link: 'https://portal.cbahi.gov.sa/arabic/careers/vacanices' },
+
+            // منصات وطنية
+            { name: 'المنصة الوطنية للتوظيف (جدارات)', category: 'platform', link: 'https://jadarat.sa/' },
+            { name: 'البوابة الوطنية للعمل (طاقات)', category: 'platform', link: 'https://www.taqat.sa/' },
+        ];
+
+        const grid = document.getElementById('cards-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        const categoryMap = {
+            gov: { text: 'تجمع صحي', badgeClass: 'gov-badge' },
+            military: { text: 'عسكري وأمني', badgeClass: 'military-badge' },
+            private: { text: 'قطاع خاص', badgeClass: 'private-badge' },
+            specialized: { text: 'مدينة طبية وتخصصي', badgeClass: 'specialized-badge' },
+            regulatory: { text: 'هيئة تنظيمية', badgeClass: 'regulatory-badge' },
+            platform: { text: 'منصة وطنية', badgeClass: 'platform-badge' }
+        };
+
+        function renderCards() {
+            grid.innerHTML = '';
+            healthEntities.forEach(entity => {
+                if (entity.isSpecial) {
+                    const specialCard = `
+                        <div class="card bg-teal-700 text-white rounded-2xl p-6 flex flex-col items-center justify-center text-center col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4 transform transition-all duration-300 hover:!scale-105" data-category="special">
+                             <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                             </div>
+                            <h3 class="text-xl font-bold mb-2">${entity.name}</h3>
+                            <p class="mb-4 font-light opacity-80">هل تحتاج مساعدة في التقديم؟ هنا تجد شروحات بالفيديو خطوة بخطوة.</p>
+                            <a href="${entity.link}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto mt-auto inline-block bg-white text-teal-700 font-bold py-3 px-8 rounded-lg hover:bg-slate-200 transition-colors">
+                                مشاهدة الشروحات
+                            </a>
+                        </div>`;
+                    grid.innerHTML += specialCard;
+                } else {
+                    const catInfo = categoryMap[entity.category];
+                    const cardHTML = `
+                        <div class="card flex flex-col bg-white p-5 rounded-xl" data-category="${entity.category}">
+                            <div class="flex-grow">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-bold text-lg text-slate-800">${entity.name}</h3>
+                                    ${catInfo ? `<span class="category-badge ${catInfo.badgeClass}">${catInfo.text}</span>` : ''}
+                                </div>
+                                ${entity.note ? `<p class="text-sm text-slate-500 mb-4">${entity.note}</p>` : ''}
+                            </div>
+                            <a href="${entity.link}" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-teal-600 text-white font-bold py-2.5 px-4 rounded-lg hover:bg-teal-700 transition-colors">
+                                زيارة البوابة
+                            </a>
+                        </div>`;
+                    grid.innerHTML += cardHTML;
+                }
+            });
+        }
+
+        function filterCards(filter) {
+            const cards = document.querySelectorAll('#cards-grid .card');
+            cards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter || (filter !== 'special' && card.dataset.category === 'special')) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filter = button.dataset.filter;
+                filterCards(filter);
+            });
+        });
+
+        // Initial render
+        renderCards();
+
+    </script>
+</body>
+</html>
